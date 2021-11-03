@@ -10,13 +10,15 @@
 PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 alias c='clear;bash'
 
+alias w='curl wtter.in'
+
 #exa
 alias ls='exa -l --color=always --group-directories-first'  
 alias lt='exa -T --color=always --group-directories-first' 
 alias cpu='cpufetch'
 alias fetch='sysfex'
 alias icat='kitty +kitten icat'
-alias basedfetch='~/scripts/clones/basedfetch/basedfetch'
+alias f='~/scripts/clones/basedfetch/basedfetch'
 
 #git
 source $HOME/scripts/git-prompt.sh
