@@ -17,6 +17,6 @@ My configs are based, just download them or yoink whatever you want lol.
 ## Installation
 
 ```bash
- $ git clone https://github.com/Macawls/dotfiles            #cloning repo
- $ curl -O 'file-url'                                       #using curl for specific files
+ $ git clone https://github.com/Macawls/dotfiles            # cloning repo
+ $ curl -O 'file-url'                                       # use curl or wget for specific files
 ```
