@@ -1,5 +1,4 @@
-#
-# ~/.bashrc
+# # ~/.bashrc
 #
 
 # If not running interactively, don't do anything
@@ -8,8 +7,12 @@
 
 #prompt
 PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
-alias c='clear;bash'
 
+############
+#  ALIASES #
+############
+
+alias c='clear;bash'
 alias w='curl wtter.in'
 
 #exa
@@ -19,6 +22,7 @@ alias cpu='cpufetch'
 alias fetch='sysfex'
 alias icat='kitty +kitten icat'
 alias f='~/scripts/clones/basedfetch/basedfetch'
+alias yt='ytfzf -t'
 
 #git
 source $HOME/scripts/git-prompt.sh
@@ -27,11 +31,20 @@ GIT_PS1_SHOWUPSTREAM="auto"
 #dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/.git/ --work-tree=$HOME'
 
+###################
+#  ENV VARIABLES  #
+###################
+
 #pfetch
 export PF_INFO="wm uptime pkgs palette"
 export PF_COL1=2
 export PF_COL2=8
 export PF_ASCII="arch"
 export EDITOR="asdas"
+
+#ytfzf
+export YTFZF_CONFIG_FILE='$HOME/.config/ytfzf'
+
+
 pfetch
 
