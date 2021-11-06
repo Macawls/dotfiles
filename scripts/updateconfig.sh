@@ -47,12 +47,10 @@ while true; do
     echo -n "> "
     read yn
     case $yn in
-        [Yy]* ) $dots commit -a -m "$msg"; exit;;
+        [Yy]* ) $dots commit -a -m "$msg";$dots push exit;;
         [Nn]* ) exit;;
         * ) echo -e "${red}Answer YES or NO u sexy mofo${red}";;
     esac
 done
-
-$dots push
 
 
