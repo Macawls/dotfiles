@@ -24,4 +24,5 @@ alias icat='kitty +kitten icat'
 alias yt='ytfzf -t'
 
 #git
-alias config='/usr/bin/git --gir-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotfiles='~/scripts/updateconfig.sh'
