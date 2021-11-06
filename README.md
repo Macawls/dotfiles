@@ -18,5 +18,5 @@ My configs are based, just download them or yoink whatever you want lol.
 Read **[this](https://www.atlassian.com/git/tutorials/dotfiles)** link for a complete explanation for installing these files on a new system
 ```bash
  $ git clone https://github.com/Macawls/dotfiles            # cloning repo
- $ curl -O 'file-url'                                       # use curl or wget for specific files
+ $ curl -O <file-url>                                       # use curl or wget for specific files
 ```
