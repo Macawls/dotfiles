@@ -6,20 +6,26 @@
 sxhkd &
 nm-applet &
 $HOME/.config/polybar/start.sh &
-picom --experimental-backends &
 $HOME/scripts/monitors.sh &
+$HOME/scripts/mouse.sh &
 nitrogen --restore &
+picom --experimental-backends &
 
 #bspwm
 bspc monitor DP-3 -d 1 2 3 4 
 bspc monitor DVI-D-1 -d 5 6 7 8
 
-bspc config border_width         5
-bspc config window_gap          15
+bspc config border_width         2
+bspc config window_gap           7
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
+bspc config single_monocle 	 true
+
+bspc config active_border_color \#111318
+bspc config focused_border_color \#61afef
+bspc config normal_border_colour \#111318
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a firefox desktop='^5'
