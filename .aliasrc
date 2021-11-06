@@ -1,0 +1,27 @@
+#!/bin/sh
+
+############
+#  ALIASES #
+############
+
+#misc
+alias c='clear;exec bash'
+alias w='curl wtter.in'
+
+#exa
+alias ls='exa -l --color=always --group-directories-first'  
+alias lt='exa -T --color=always --group-directories-first' 
+
+#fetches
+alias cpu='cpufetch'
+alias fetch='sysfex'
+alias f='~/scripts/clones/basedfetch/basedfetch'
+
+#images
+alias icat='kitty +kitten icat'
+
+#yt, anime
+alias yt='ytfzf -t'
+
+#git
+alias config='/usr/bin/git --gir-dir=$HOME/.dotfiles/ --work-tree=$HOME'
