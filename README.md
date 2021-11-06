@@ -5,7 +5,9 @@
 </p>
 <p align="center">
 My configs are based, just download them or yoink whatever you want lol. 
-<br /> Using bspwm, rofi, polybar, picom and dunst. Make sure to install all the fonts and stuffs. 
+<br /> Using bspwm, rofi, polybar, picom 
+<a href="https://github.com/tryone144/picom/tree/feature/dual_kawase">(tryone's fork)</a>
+ and dunst. Make sure to install all the fonts and stuffs. 
 </p>
 <p align="center">
   <img src="https://i.imgur.com/Ipj6MYa.gif?raw=true" alt="cozy"/>
