@@ -1,7 +1,7 @@
 <h1 align="center">Cozy Dots</h1>
 
 <p align="center">
-  <img src="https://i.imgur.com/zOUwbVC.jpg?raw=true" alt="cozy"/>
+  <img src="https://i.imgur.com/w8pZFj1.png?raw=true" alt="cozy"/>
 </p>
 <p align="center">
 My configs are based, just download them or yoink whatever you want lol. 
