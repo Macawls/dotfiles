@@ -7,7 +7,7 @@
 #misc
 alias c='clear;exec bash'
 alias w='curl wtter.in'
-
+alias vim='nvim'
 #exa
 alias ls='exa -l --color=always --group-directories-first'  
 alias lt='exa -T --color=always --group-directories-first' 

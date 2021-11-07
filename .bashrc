@@ -26,6 +26,7 @@ aliases=(
 )
 
 plugins=(
+  progress  
   git
   bashmarks
 )
