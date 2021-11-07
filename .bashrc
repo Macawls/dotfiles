@@ -1,23 +1,34 @@
-#
-# ~/.bashrc
-#
+export OSH=$HOME/.oh-my-bash
 
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
 
-#aliases
 [ -f "$HOME/.aliasrc" ] && source "$HOME/.aliasrc"
 
-PS1='[\u@\h \W]\$ '
 
 ###################
 #  ENV VARIABLES  #
 ###################
 
+#oh-my-bash
+OSH_THEME="font"
 #pfetch
 export PF_INFO="wm uptime pkgs palette"
 export PF_COL1=4
 export PF_COL2=7
 export PF_ASCII="arch"
 
+completions=(
+  git
+  composer
+  ssh
+)
+
+aliases=(
+  general
+)
+
+plugins=(
+  git
+  bashmarks
+)
+source $OSH/oh-my-bash.sh
 pfetch
