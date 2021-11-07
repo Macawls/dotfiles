@@ -1,7 +1,6 @@
 export OSH=$HOME/.oh-my-bash
 
 
-[ -f "$HOME/.aliasrc" ] && source "$HOME/.aliasrc"
 
 
 ###################
@@ -30,5 +29,7 @@ plugins=(
   git
   bashmarks
 )
+
 source $OSH/oh-my-bash.sh
+[ -f "$HOME/.aliasrc" ] && source "$HOME/.aliasrc"
 pfetch
