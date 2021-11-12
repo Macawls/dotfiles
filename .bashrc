@@ -33,4 +33,4 @@ plugins=(
 
 source $OSH/oh-my-bash.sh
 [ -f "$HOME/.aliasrc" ] && source "$HOME/.aliasrc"
-pfetch
+#pfetch
