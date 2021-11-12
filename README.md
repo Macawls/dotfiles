@@ -7,10 +7,13 @@
 My configs are based, just download them or yoink whatever you want lol. 
 <br /> Using bspwm, rofi, polybar, picom 
 <a href="https://github.com/tryone144/picom/tree/feature/dual_kawase">(tryone's fork)</a>
- and dunst. Make sure to install all the fonts and stuffs. Everything is very much a work in progress because im new to linux
-</p>
+ and dunst. Make sure to install all the fonts and stuffs. 
 <p align="center">
   <img src="https://i.imgur.com/Ipj6MYa.gif?raw=true" alt="cozy"/>
+  <br>
+<br> Everything is very much a work in progress because im relatively new to linux but ricing is supa fun. <br />
+</p>
+
 </p>
 <h2 align="center">Screenshots</h2>
 
