@@ -20,12 +20,10 @@ My configs are based, just download them or yoink whatever you want lol.
 ![Logo](https://i.imgur.com/YyVY6mM.png)
 
 <h2 align="left">Credits</h2>
-<p align="left">
-<br> Using NvChad for Neovim <a href="https://github.com/NvChad/NvChad">NvChad</a> <br />
-<br> R-Jin for browser homepage <a href="https://github.com/R-Jin/One-page">One-page</a> <br />
-<br> Rofi themes <a href="https://github.com/Bleyom/rofi">themes</a> <br />
-<br> Fetch tool <a href="https://github.com/Mangeshrex/rxfetch">Rxfetch</a> <br />
-</p>
+<br> • Using NvChad for Neovim <a href="https://github.com/NvChad/NvChad">NvChad</a> <br />
+<br> • R-Jin for browser homepage <a href="https://github.com/R-Jin/One-page">One-page</a> <br />
+<br> • Rofi themes <a href="https://github.com/Bleyom/rofi">themes</a> <br />
+<br> • Fetch tool <a href="https://github.com/Mangeshrex/rxfetch">Rxfetch</a> <br />
 
 ## Installation
 Read **[this](https://www.atlassian.com/git/tutorials/dotfiles)** link for a complete explanation for installing these files on a new system
