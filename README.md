@@ -14,7 +14,7 @@ My configs are based, just download them or yoink whatever you want lol.
 </p>
 <h2 align="center">Screenshots</h2>
 
-![Logo](https://i.imgur.com/6pGzAgU.png)
+![Logo](https://i.imgur.com/YyVY6mM.png)
 
 ## Installation
 Read **[this](https://www.atlassian.com/git/tutorials/dotfiles)** link for a complete explanation for installing these files on a new system
