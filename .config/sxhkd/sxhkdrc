@@ -23,6 +23,9 @@ alt + period
 super + Escape
 	pkill -USR1 -x sxhkd
 
+# file manager
+alt + n
+	nautilus
 #
 # bspwm hotkeys
 #
@@ -53,7 +56,7 @@ alt + g
 
 # set the window state
 alt + {t,shift + t,s,f}
-	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+	bspc node -t {tiled; polybar-msg cmd show ,pseudo_tiled,floating,fullscreen; polybar-msg cmd hide}
 
 # set the node flags
 alt + ctrl + {m,x,y,z}
