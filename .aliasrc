@@ -14,7 +14,6 @@ alias lt='exa -T --color=always --group-directories-first'
 
 #fetches
 alias cpu='cpufetch'
-alias fetch='sysfex'
 alias f='~/scripts/clones/basedfetch/basedfetch'
 
 #images
