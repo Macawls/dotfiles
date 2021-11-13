@@ -4,7 +4,7 @@
 
 # screenshots
 alt + Print
-	scrot -d 2 $HOME/images/screenshots/`date +%Y-%m-%d_%H:%M:%S`.png;dunstify "scrot" "image taken"
+	scrot -d 2 $HOME/images/screenshots/`date +%Y-%m-%d_%H:%M:%S`.png;notify-send "scrot" "image taken"
 
 # terminal emulator
 alt + Return
@@ -21,11 +21,11 @@ alt + period
 
 # make sxhkd reload its configuration files:
 super + Escape
-	pkill -USR1 -x sxhkd;dunstify "sxhkd" "config reloaded" --expire-time=2000
+	pkill -USR1 -x sxhkd;notify-send "sxhkd" "config reloaded" --expire-time=2000
 
 # file manager
-alt + n
-	nautilus
+alt + r
+	kitty --start-as normal -e ranger
 #
 # bspwm hotkeys
 #
