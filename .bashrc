@@ -12,6 +12,8 @@ export PF_COL1=4
 export PF_COL2=7
 export PF_ASCII="arch"
 
+export EDITOR="nvim"
+
 ###############
 # OH-MY-BASH  #
 ###############
