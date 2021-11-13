@@ -11,7 +11,7 @@ My configs are based, just download them or yoink whatever you want lol.
 <p align="center">
   <img src="https://i.imgur.com/Ipj6MYa.gif?raw=true" alt="cozy"/>
   <br>
-<br> Everything is very much a work in progress because im relatively new to linux but ricing is supa fun. <br />
+<br> Everything is very much a work in progress because im relatively new to linux but ricing and optimizing my workflow is fun :) <br />
 </p>
 
 </p>
