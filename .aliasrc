@@ -18,6 +18,7 @@ alias f='~/scripts/clones/basedfetch/basedfetch'
 
 #images
 alias icat='kitty +kitten icat'
+alias typetest='typiskt -t 30'
 
 #yt, anime
 alias yt='ytfzf -t'

@@ -14,6 +14,10 @@ export PF_ASCII="arch"
 
 export EDITOR="nvim"
 
+#disable telementary
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+
+
 ###############
 # OH-MY-BASH  #
 ###############
