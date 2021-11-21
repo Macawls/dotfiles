@@ -5,12 +5,16 @@
 #startup
 sxhkd &
 nm-applet &
+
+#scripts
 $HOME/.config/polybar/start.sh &
 $HOME/scripts/monitors.sh &
 $HOME/scripts/mouse.sh &
 $HOME/scripts/centerwindow.sh &
-nitrogen --restore &
+$HOME/scripts/keyboard.sh &
+
 picom --experimental-backends &
+nitrogen --restore &
 
 #bspwm
 bspc monitor DP-0 -d 1 2 3 4 
@@ -35,3 +39,4 @@ bspc rule -a Screenkey manage=off
 bspc rule -a Shutter state=floating
 bspc rule -a Pavucontrol state=floating
 bspc rule -a vlc state=floating
+bspc rule -a Nitrogen state=floating 

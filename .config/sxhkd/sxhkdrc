@@ -23,9 +23,14 @@ alt + period
 super + Escape
 	pkill -USR1 -x sxhkd;notify-send "sxhkd" "config reloaded" --expire-time=2000
 
+# browser 
+alt + w
+        firefox
+
 # file manager
 alt + r
 	kitty --start-as normal -e ranger
+
 #
 # bspwm hotkeys
 #
