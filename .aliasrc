@@ -8,10 +8,10 @@
 alias c='clear;exec bash'
 alias w='curl wttr.in'
 alias vim='nvim'
-#exa
+
+#replacements
 alias ls='exa -l --color=always --group-directories-first'  
 alias lt='exa -T --color=always --group-directories-first' 
-
 #fetches
 alias cpu='cpufetch'
 alias f='~/scripts/clones/basedfetch/basedfetch'
@@ -22,7 +22,9 @@ alias typetest='typiskt -t 30'
 
 #yt, anime
 alias yt='ytfzf -t'
+alias anime='ani-cli'
 
 #git
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias dotfiles='~/scripts/updateconfig.sh'
+

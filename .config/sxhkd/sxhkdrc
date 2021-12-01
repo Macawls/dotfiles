@@ -30,6 +30,12 @@ alt + w
 # file manager
 alt + r
 	kitty --start-as normal -e ranger
+#volume up
+super + equal
+	pactl set-sink-volume 1 +5%
+#volume down
+super + minus
+	pactl set-sink-volume 1 -5%
 
 #
 # bspwm hotkeys
@@ -62,6 +68,11 @@ alt + g
 # set the window state
 alt + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,'~fullscreen'; polybar-msg cmd toggle}
+
+# polybar toggle
+alt + space
+        polybar-msg cmd toggle
+
 
 # set the node flags
 alt + ctrl + {m,x,y,z}

@@ -2,44 +2,19 @@
 #  ENV VARIABLES  #
 ###################
 
-export OSH=$HOME/.oh-my-bash
 
-#oh-my-bash
-OSH_THEME="font"
 #pfetch
 export PF_INFO="wm uptime pkgs palette"
 export PF_COL1=4
 export PF_COL2=7
 export PF_ASCII="arch"
 
-export EDITOR="nvim"
+export EDITOR="vim"
 
 #disable telementary
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
-
-###############
-# OH-MY-BASH  #
-###############
-
-completions=(
-  git
-  composer
-  ssh
-)
-
-aliases=(
-  general
-)
-
-plugins=(
-  progress  
-  git
-  bashmarks
-)
-source $OSH/oh-my-bash.sh
-
-
 [ -f "$HOME/.aliasrc" ] && source "$HOME/.aliasrc"
 
-#pfetch
+#startup
+pfetch
