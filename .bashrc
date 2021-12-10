@@ -7,7 +7,6 @@
 export PF_INFO="wm uptime pkgs palette"
 export PF_COL1=4
 export PF_COL2=7
-export PF_ASCII="arch"
 
 export EDITOR="vim"
 
@@ -18,3 +17,4 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 #startup
 pfetch
+
