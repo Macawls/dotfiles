@@ -15,7 +15,7 @@ alt + Return
 
 # program launcher
 alt + d
-	rofi -show run
+	rofi -show drun
 
 # emoji
 alt + period

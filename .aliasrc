@@ -27,4 +27,4 @@ alias anime='ani-cli'
 #git
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias dotfiles='~/scripts/updateconfig.sh'
-
+alias unitygit='~/scripts/unitygit.sh'
