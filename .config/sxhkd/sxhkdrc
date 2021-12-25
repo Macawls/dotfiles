@@ -21,6 +21,9 @@ alt + d
 alt + period
 	rofi -show emoji -modi emoji -config ~/.config/rofi/themes/emoji.rasi
 
+# keys
+super + k
+	showkeys
 
 # make sxhkd reload its configuration files:
 super + Escape
