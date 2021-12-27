@@ -27,6 +27,35 @@ function flf() {
 	du -h -x -s -- * | sort -r -h | head -20;
 }
 
+cyan=`tput setaf 6`
+red=`tput setaf 1`
+green=`tput setaf 2`
+end=`tput sgr0`
+
+parse_git_branch ()
+{
+  color=""  
+  if git rev-parse --git-dir >/dev/null 2>&1
+  then
+    if git diff --quiet 2>/dev/null >&2 
+    then
+      color="${green}"
+    else
+      color="${red}"
+    fi  
+    gitver=" ("${color}$(git branch 2>/dev/null| sed -n '/^\*/s/^\* //p')${end}')'
+  else
+    return 0
+  fi
+  echo -e $gitver
+}
+
+############
+#  PROMPT  #
+############
+
+PS1='\[${cyan}\]\w\[${end}\] ❯$(parse_git_branch) '
+
 #startup
 pfetch
 
