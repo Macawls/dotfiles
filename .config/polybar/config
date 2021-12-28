@@ -1,0 +1,235 @@
+include-file = ~/.config/polybar/colors.ini
+
+
+[bar/mainbar]
+monitor = DP-0
+include-file = ~/.config/polybar/bar
+
+background = ${colors.background} 
+foreground = ${colors.foreground} 
+
+modules-left = arch left bspwm right
+modules-center = spotify-prev sep spotify-play-pause sep spotify-next sep spotify
+modules-right = left volume right sep left cpu sepb memory sepb filesystem right sep left date right 
+
+border-top-size = 7
+border-bottom-size = 7
+border-top-color = ${colors.background}
+border-bottom-color = ${colors.background}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[module/sep]
+type = custom/text
+content = "  "
+
+[module/sepb]
+type = custom/text
+content = "  "
+content-background = ${colors.background-alt}
+
+
+[module/left]
+type = custom/text
+content = ""
+content-font = 4
+content-foreground = ${colors.background-alt} 
+content-padding-left = 2
+
+[module/right]
+type = custom/text
+content = ""
+content-foreground = ${colors.background-alt}
+content-padding-right = 2
+
+[module/screen]
+type = custom/menu
+label-open = 
+
+menu-0-0 = 
+menu-0-0-exec = nautilus 
+menu-0-0-foreground = ${colors.green}
+menu-0-1 = 
+menu-0-1-exec =
+menu-0-1-foreground = ${colors.yellow}
+menu-0-2 = 
+menu-0-2-exec =
+menu-0-2-foreground = ${colors.red}
+
+
+[module/arch]
+type = custom/menu
+
+expand-right = true
+
+menu-0-0 = Logout
+menu-0-0-exec = i3-msg exit
+menu-0-0-foreground = ${colors.green}
+menu-0-1 = Reboot
+menu-0-1-exec = reboot
+menu-0-1-foreground = ${colors.yellow}
+menu-0-2 = Poweroff
+menu-0-2-exec = poweroff
+menu-0-2-foreground = ${colors.red}
+format-spacing = 1 
+format-padding = 2
+
+label-open = "  "
+label-open-foreground = ${colors.foreground}
+label-close =  
+label-close-foreground = ${colors.magenta}
+
+label-separator = ┃
+
+
+[module/memory]
+type = internal/memory
+internal = 1
+format = <label>
+label =  %gb_used%
+label-background = ${colors.background-alt}
+label-foreground = ${colors.red}
+;;label-underline = ${colors.aqua}
+
+[module/filesystem]
+type = internal/fs
+
+mount-0 = /
+interval = 10
+fixed-values = true
+spacing = 4
+format-mounted = <label-mounted>
+label-mounted =  %free% 
+label-mounted-background = ${colors.background-alt}
+label-mounted-foreground = ${colors.green}
+
+[module/cpu]
+type = internal/cpu
+internal = 0.5
+format = <label>
+label =  %percentage%%
+label-foreground = ${colors.blue}
+label-background = ${colors.background-alt}
+
+[module/date]
+type = internal/date
+interval = 60
+date = %a %d %b
+time = %l:%M %p
+label =  %date% %time%
+label-background = ${colors.background-alt}
+label-foreground = ${colors.magenta}
+
+[module/volume]
+type = internal/pulseaudio
+use-ui-max = true
+format-volume = <ramp-volume> <label-volume>
+format-muted =   Muted
+format-muted-background = ${colors.background-alt}
+format-muted-foreground = ${colors.red}
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+format-volume-background = ${colors.background-alt}
+format-volume-foreground = ${colors.yellow}
+click-right = pavucontrol
+
+[module/time]
+type = internal/date
+interval = 5
+label-foreground = #b6a49b
+date =
+date-alt = " %Y-%m-%d"
+time = %H:%M
+format-prefix = 
+format-prefix-foreground = #b6a49b
+format-padding = 1
+label = %date% %time%
+
+
+[module/title]
+type = internal/xwindow
+format = <label>
+label =  %title%
+label-maxlen = 20
+
+
+[module/notifications]
+type = custom/text
+content = 
+click-left = kill -s USR1 $(pidof deadd-notification-center)
+
+[module/menu]
+type = custom/text
+content =   
+click-left = ~/.config/rofi/launchers-git/launcher.sh &
+content-padding = 2
+
+[module/updates]
+type = custom/script
+exec = ~/.config/polybar/updates.sh
+tail = true
+interval = 5
+
+[module/spotify]
+type = custom/script
+tail = true
+format-prefix = ""
+format-prefix-foreground = ${colors.green}
+format = <label>
+exec = ~/scripts/clones/polybar-spotify/scroll_spotify_status.sh
+
+[module/spotify-prev]
+type = custom/script
+exec = echo ""
+format = <label>
+click-left = playerctl previous -p spotify
+
+[module/spotify-play-pause]
+type = custom/ipc
+hook-0 = echo ""
+hook-1 = echo ""
+initial = 1
+click-left = playerctl play-pause -p spotify
+
+[module/spotify-next]
+type = custom/script
+exec = echo ""
+format = <label>
+click-left = playerctl next -p spotify
+
+[module/separator]
+type = custom/text
+content =  
+content-padding = 1
+
+[module/bspwm]
+type = internal/bspwm
+
+pin-workspaces = false
+inline-mode = false
+
+ws-icon-0 = 1;一
+ws-icon-1 = 2;二
+ws-icon-2 = 3;三
+ws-icon-3 = 4;四
+ws-icon-4 = 5;五
+ws-icon-5 = 6;六
+ws-icon-6 = 7;七
+ws-icon-7 = 8;八
+ws-icon-8 = 8;九
+ws-icon-9 = 10;十
+
+label-focused = %icon%
+label-focused-foreground = ${colors.blue}
+label-focused-background = ${colors.background-alt}
+label-focused-padding = 2
+
+label-occupied = %icon%
+label-occupied-foreground = ${colors.foreground}
+label-occupied-background = ${colors.background-alt}
+label-occupied-padding = 2
+
+label-empty = %icon%
+label-empty-foreground = ${colors.background}
+label-empty-background = ${colors.background-alt}
+label-empty-padding = 2
