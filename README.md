@@ -15,6 +15,16 @@ My configs are based, just download them or yoink whatever you want lol.
 </p>
 
 </p>
+
+### Wallpapers
+<p align="center">
+  <img src="https://i.imgur.com/FKgDglR.png" alt="1"/>
+</p>
+</p>
+<p align="center">
+  <img src="https://i.imgur.com/IWeY6T4.png" alt="2"/> 
+</p>
+
 <h2 align="center">Screenshots</h2>
 
 ![Logo](https://i.imgur.com/YyVY6mM.png)
@@ -31,11 +41,3 @@ Read **[this](https://www.atlassian.com/git/tutorials/dotfiles)** link for a com
  $ git clone https://github.com/Macawls/dotfiles            # cloning repo
  $ curl -O <file-url>                                       # use curl or wget for specific files
 ```
-### Wallpapers
-<p align="center">
-  <img src="https://i.imgur.com/FKgDglR.png" alt="1"/>
-</p>
-</p>
-<p align="center">
-  <img src="https://i.imgur.com/IWeY6T4.png" alt="2"/> 
-</p>
