@@ -10,6 +10,10 @@ export PF_COL2=7
 
 export EDITOR="vim"
 
+# go 
+export GOPATH="$HOME/.go/"
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
 #disable telementary
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
@@ -28,7 +32,7 @@ function flf() {
 }
 
 cyan=`tput setaf 6`
-red=`tput setaf 1`
+red=`tput setaf 3`
 green=`tput setaf 2`
 end=`tput sgr0`
 
@@ -58,4 +62,5 @@ PS1='\[${cyan}\]\w\[${end}\] ❯$(parse_git_branch) '
 
 #startup
 pfetch
-
+#lsx
+source ~/.config/lsx/lsx.sh

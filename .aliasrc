@@ -29,6 +29,3 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias dotfiles='~/scripts/updateconfig.sh'
 alias unitygit='~/scripts/unitygit.sh'
 
-#web
-alias web='cd ~/docs/web/'
-alias blog='cd ~/docs/web/macawls.blog/macawlsblog/'

@@ -21,6 +21,10 @@ alt + d
 alt + period
 	rofi -show emoji -modi emoji -config ~/.config/rofi/themes/emoji.rasi
 
+# calculator 
+alt + equal
+	rofi -show calc -modi calc -no-show-match -no-sort -config ~/.config/rofi/themes/calc.rasi
+
 # keys
 super + k
 	showkeys
