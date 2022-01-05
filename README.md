@@ -16,7 +16,7 @@ My configs are based, just download them or yoink whatever you want lol.
 
 </p>
 
-### Wallpapers
+<h2 align="center">Wallpapers</h2>
 <p align="center">
   <img src="https://i.imgur.com/FKgDglR.png" alt="1"/>
 </p>
