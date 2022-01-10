@@ -21,11 +21,11 @@ alt + d
 alt + period
 	rofi -show emoji -modi emoji -config ~/.config/rofi/themes/emoji.rasi
 #music
-super + m + n
+super + n
 	playerctl next
-super + m + b
+super + b
 	playerctl previous
-super + m + p
+super + p
 	playerctl play-pause
 
 # calculator 
