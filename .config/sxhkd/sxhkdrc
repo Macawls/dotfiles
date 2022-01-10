@@ -20,6 +20,13 @@ alt + d
 # emoji
 alt + period
 	rofi -show emoji -modi emoji -config ~/.config/rofi/themes/emoji.rasi
+#music
+super + m + n
+	playerctl next
+super + m + b
+	playerctl previous
+super + m + p
+	playerctl play-pause
 
 # calculator 
 alt + equal
