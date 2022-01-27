@@ -22,6 +22,7 @@ alias typetest='typiskt -t 30'
 
 #yt, anime
 alias yt='ytfzf -t'
+alias ytdl='youtube-dl'
 alias anime='ani-cli'
 
 #git
