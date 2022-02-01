@@ -32,10 +32,6 @@ super + p
 alt + equal
 	rofi -show calc -modi calc -no-show-match -no-sort -config ~/.config/rofi/themes/calc.rasi
 
-# keys
-super + k
-	showkeys
-
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd;notify-send "sxhkd" "config reloaded" --expire-time=2000
