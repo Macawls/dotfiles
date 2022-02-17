@@ -13,7 +13,7 @@ reset="\033[0m"
 
 
 # :)
-dots="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME" #bare repo
+dots="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME" #bare repo
 remoteurl="$dots remote show origin | awk '/Push/ {print \$3}'" #origin url for repo
 headbranch="$dots branch | awk '{print \$2}'"
 

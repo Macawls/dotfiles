@@ -4,6 +4,7 @@
 
 #startup
 sxhkd &
+dunst &
 nm-applet &
 
 #scripts
@@ -18,7 +19,7 @@ nitrogen --restore &
 #bspwm
 
 bspc config border_width         2
-bspc config window_gap           0
+bspc config window_gap           6
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
