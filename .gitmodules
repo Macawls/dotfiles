@@ -1,6 +1,0 @@
-[submodule "/home/josh/scripts/clones/ani-cli-git"]
-	path = /home/josh/scripts/clones/ani-cli-git
-	url = https://github.com/pystardust/ani-cli
-[submodule "scripts/clones/polybar-spotify"]
-	path = scripts/clones/polybar-spotify
-	url = https://github.com/Macawls/polybar-spotify
